@@ -49,7 +49,7 @@ class DockPage extends StatelessWidget {
                     radius: 18,
                     backgroundColor: Colors.black,
                     backgroundImage: AssetImage("Images/portrait_black.jpg"),
-                   ),
+                  ),
                   Container(
                     margin: EdgeInsets.fromLTRB(25, 0, 0, 0),
                     width: 100,
@@ -72,13 +72,14 @@ class DockPage extends StatelessWidget {
                       ],
                     ),
                   ),
-                  SizedBox(
-                    width: 170,
-                  ),
-                  Icon(
-                    Icons.add_alert_sharp,
-                    color: Color(0xfff7F7F7F),
-                    size: 28,
+                  SizedBox(width: 168),
+                  Align(
+                    alignment: Alignment.topRight,
+                    child: Icon(
+                      Icons.add_alert_sharp,
+                      color: Color(0xfff7F7F7F),
+                      size: 28,
+                    ),
                   )
                 ],
               ),
@@ -108,7 +109,6 @@ class DockPage extends StatelessWidget {
               decoration: BoxDecoration(
                   color: Colors.lightBlue,
                   borderRadius: BorderRadius.circular(12),
-
                   gradient: LinearGradient(
                     begin: Alignment.topRight,
                     end: Alignment.bottomLeft,
@@ -117,16 +117,12 @@ class DockPage extends StatelessWidget {
                       Color(0xfff0583F2),
                       Color(0xfff0047E5),
                     ],
-                  )
-
-              ),
+                  )),
               child: Column(
-
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Container(
                     alignment: Alignment.topLeft,
-
                     child: Text(
                       "Give money",
                       style: TextStyle(
@@ -141,11 +137,10 @@ class DockPage extends StatelessWidget {
                   ),
                   Container(
                       alignment: Alignment.topLeft,
-
                       child: Text(
-                    "Amra jani takai jiboner shob na. But tarpor o Taka lagbe.",
-                    style: TextStyle(color: Colors.white, fontSize: 16),
-                  ))
+                        "Amra jani takai jiboner shob na. But tarpor o Taka lagbe.",
+                        style: TextStyle(color: Colors.white, fontSize: 16),
+                      ))
                 ],
               ),
             ),
@@ -155,9 +150,8 @@ class DockPage extends StatelessWidget {
               height: 160,
               width: 550,
               decoration: BoxDecoration(
-                  color: Colors.pinkAccent,
-                  borderRadius: BorderRadius.circular(12),
-
+                color: Colors.pinkAccent,
+                borderRadius: BorderRadius.circular(12),
                 gradient: LinearGradient(
                   begin: Alignment.topRight,
                   end: Alignment.bottomLeft,
@@ -165,16 +159,14 @@ class DockPage extends StatelessWidget {
                     Color(0xfffFFA6DB),
                     Color(0xfffFA23A4),
                     Color(0xfffD92588),
-                  ],),
-
+                  ],
+                ),
               ),
               child: Column(
-
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Container(
                     alignment: Alignment.topLeft,
-
                     child: Text(
                       "Pay in shop",
                       style: TextStyle(
@@ -189,7 +181,6 @@ class DockPage extends StatelessWidget {
                   ),
                   Container(
                       alignment: Alignment.topLeft,
-
                       child: Text(
                         "Akhon emne na dile dokanei den. But taka ta den.",
                         style: TextStyle(color: Colors.white, fontSize: 16),
@@ -212,8 +203,7 @@ class DockPage extends StatelessWidget {
                     width: 160,
                     decoration: BoxDecoration(
                         color: Color(0xfffffffff),
-                        borderRadius: BorderRadius.circular(12)
-                    ),
+                        borderRadius: BorderRadius.circular(12)),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -225,31 +215,34 @@ class DockPage extends StatelessWidget {
                               color: Color(0xfffEBEBEB),
                               shape: BoxShape.circle,
                             ),
-                            child: Icon(Icons.assignment, color: Colors.grey, size: 40,),
+                            child: Icon(
+                              Icons.assignment,
+                              color: Colors.grey,
+                              size: 40,
+                            ),
                           ),
                         ),
                         Container(
-                            child: Text("Fidelity  Cards",  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),)),
+                            child: Text(
+                          "Fidelity  Cards",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 24),
+                        )),
                         Container(
                             alignment: Alignment.centerLeft,
                             child: Text("0 Cards")),
-
                       ],
                     ),
                   ),
-
                   Container(
                     padding: EdgeInsets.fromLTRB(20, 20, 20, 15),
                     alignment: Alignment.topLeft,
-
                     margin: EdgeInsets.fromLTRB(17, 5, 15, 5),
                     height: 200,
                     width: 160,
                     decoration: BoxDecoration(
                         color: Color(0xfffffffff),
-                        borderRadius: BorderRadius.circular(12)
-                    ),
-
+                        borderRadius: BorderRadius.circular(12)),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -261,23 +254,29 @@ class DockPage extends StatelessWidget {
                               color: Color(0xfffEBEBEB),
                               shape: BoxShape.circle,
                             ),
-                            child: Icon(Icons.account_balance_wallet_sharp, color: Colors.grey, size: 40,),
+                            child: Icon(
+                              Icons.account_balance_wallet_sharp,
+                              color: Colors.grey,
+                              size: 40,
+                            ),
                           ),
                         ),
                         Container(
-                            child: Text("Gift Voucher",  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),)),
+                            child: Text(
+                          "Gift Voucher",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 24),
+                        )),
                         Container(
                             alignment: Alignment.centerLeft,
                             child: Text("0 Vouchers")),
-
                       ],
                     ),
                   ),
                 ],
               ),
             )
-
-                      ],
+          ],
         ),
       ),
     );
