@@ -14,3 +14,9 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+## This is just a basic page structure created by flutter. 
+And looks like this when opened :
+
+![Screenshot_1633893533](https://user-images.githubusercontent.com/64703325/137913944-2d7c9bf9-8124-42b5-8a46-820b7e315c98.png)
+
